@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #1d3e60;
+}
+/*App styling*/
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator {
+  width: 80%;
+  max-width: 400px;
+  height: 60%;
+  max-height: 500px;
+  border-radius: 10px;
+  background-color: #171717;
+  box-shadow: 2px 2px 7px 1px #132a40;
+}
+.display {
+  border: 1px solid black;
+  width: 90%;
+  height: 20%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 0;
+  border-radius: 10px;
+  background-color: #cfcfcf;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 2%;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+.buttons {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  gap: 2%;
+  grid-template: "clear clear divide multiply"
+                 "seven eight nine subtract"
+                 "four five six add"
+                 "one two three equals"
+                 "zero zero decimal equals";
+}
+.buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #5c5c5c;
+  color: white;
+}
+.clear {
+  background-color: #949494 !important;
+  grid-area: clear;
+}
+.divide {
+  background-color: #949494 !important;
+  grid-area: divide;
+}
+.multiply {
+  background-color: #FF9933 !important;
+  grid-area: multiply;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.subtract {
+  background-color: #FF9933 !important;
+  grid-area: subtract;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.add {
+  background-color: #FF9933 !important;
+  grid-area: add;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.equals {
+  background-color: #FF9933 !important;
+  grid-area: equals;
+}
+.zero {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+
+/*Footer styling*/
+
+.footer {
+  color: #cfcfcf;
+  font-family: 'Inter', sans-serif;
+}
+.footer > i {
+  color: white;
+}
+.footer > a {
+  text-decoration: none !important;
+  color: white;
+}
